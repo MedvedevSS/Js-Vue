@@ -6,7 +6,6 @@ function multiply() {
   for (let i = 0; i < arguments.length; i++) {
     res *= arguments[i];
   }
-  console.log(res);
   return res;
 }
 
