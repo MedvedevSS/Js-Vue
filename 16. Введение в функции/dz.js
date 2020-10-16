@@ -1,4 +1,3 @@
-
 // Упражнение 1:
 // Создать функцию multiply, которая будет принимать любое количество чисел и возвращать их произведение.
 //
@@ -49,12 +48,17 @@ console.log(String);
 //
 // подсказка: в решение задачи вам помогут методы charCodeAt и trim
 
-function getCodeStringFromText() {
-  let str = '';
-  for (i = 0; i < arguments.length; i++) {
-    str += arguments.length.charCodeAt();
-    console.log(str);
+function getCodeStringFromText(str) {
+  let newStr1 = '';
+
+  for (let i = 0; i < str.length; i++) {
+    if (i === str.length - 1) {
+      newStr1 += str.charCodeAt(i);
+    } else {
+      newStr1 += str.charCodeAt(i) + ' ';
+    }
   }
+  return console.log(newStr1);
 }
 
 getCodeStringFromText('hello');
