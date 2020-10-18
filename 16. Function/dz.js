@@ -6,7 +6,7 @@
 // Если нет ни одного аргумента, вернуть ноль: multiply(0) // 0
 
 function multiply() {
-  if (arguments.length === 0) return 0;
+  if (!arguments.length) return 0;
 
   let res = 1;
   for (let i = 0; i < arguments.length; i++) {
@@ -15,7 +15,7 @@ function multiply() {
   return res;
 }
 
-multiply(2, 4, 6, 8);
+console.log(multiply(2, 4, 6, 8));
 
 // Упражнение 2:
 // Создать функцию, которая принимает строку и возвращает строку-перевертыш
@@ -28,19 +28,17 @@ multiply(2, 4, 6, 8);
 
 function reverseString(str) {
   let newStr = '';
+
   for (let i = str.length - 1; i >= 0; i--)
     newStr += str[i];
+
   return newStr;
 }
 
-let String = reverseString('test');
-console.log(String);
-String = reverseString('');
-console.log(String);
-String = reverseString('null');
-console.log(String);
-String = reverseString('undefined');
-console.log(String);
+console.log(reverseString('test'));
+console.log(reverseString(''));
+console.log(reverseString('null'));
+console.log(reverseString('undefined'));
 
 // Упражнение 3:
 // Создать функцию, которая в качестве аргумента может приять строку, числа, null или undefined и возвращает строку, где каждый символ разделен пробелом и заменен на юникод-значение символа:
@@ -57,8 +55,8 @@ function getCodeStringFromText(str) {
     } else {
       newStr1 += str.charCodeAt(i) + ' ';
     }
-  }
-  return console.log(newStr1);
+	}
+	return newStr1;
 }
 
 getCodeStringFromText('hello');
@@ -74,3 +72,20 @@ getCodeStringFromText('hello');
 //
 // Если передано число в виде строки, оно должно быть преобразованно к числу.
 
+function getLucky(num) {
+	num = parseFloat(num);
+	let randomNum = Math.floor(Math.random() * 10 + 1);
+
+	if (num < 0 || num > 10) {
+		return new Error('please provide number in range 0 - 10');
+	} else if (typeof num !== 'number') {
+		return new Error('Please provide a valid number');
+	} else if (randomNum === num) {
+		return 'You win';
+	} else {
+		return `You are lose, your number is ${num}, the random number is ${randomNum}`;
+	}
+}
+
+
+console.log(getLucky('5'));

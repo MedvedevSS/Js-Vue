@@ -43,7 +43,7 @@ console.log(fact);
    if (i === 0 || str[i -1] === ' ') {
      newStr += str[i].toUpperCase();
    } else if (str[i] === ' ') {
-        continue;
+     continue;
    } else {
      newStr += str[i];
    }
