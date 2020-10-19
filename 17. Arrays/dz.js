@@ -69,3 +69,47 @@ console.log(changeCollection([1, 2, 3], ['a', 'b', 'c']));;
 // 		}
 // 	]
 
+let users = [
+		{
+			_id: '5e36b779dc76fe3db02adc32',
+			balance: '$1,955.65',
+			picture: 'http://placehold.it/32x32',
+			age: 33,
+			name: 'Berg Zimmerman',
+			gender: 'male'
+		},
+		{
+			_id: '5e36b779d117774176f90e0b',
+			balance: '$3,776.14',
+			picture: 'http://placehold.it/32x32',
+			age: 37,
+			name: 'Deann Winters',
+			gender: 'female'
+		},
+		{
+			_id: '5e36b779daf6e455ec54cf45',
+			balance: '$3,424.84',
+			picture: 'http://placehold.it/32x32',
+			age: 36,
+			name: 'Kari Waters',
+			gender: 'female'
+		}
+	];
+
+function checkArr(arr, field, value) {
+	if (!Array.isArray(arr)) return new Error('Error message');
+
+	if (!arr[0].hasOwnProperty(field)) return new Error('Error message');
+
+	if (value === undefined) return new Error('Значение не задано');
+
+	let result = [];
+
+	for (let i = 0; i < arr.length; i++) {
+		if (arr[i][field] === value) {
+			result.push(arr[i]);
+		}
+	}
+	return result;
+}
+console.log(checkArr(users, age, 36));

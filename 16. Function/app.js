@@ -284,7 +284,8 @@
 
 // console.log(Number.MAX_SAFE_INTEGER);
 // console.log(2 > 1);
-
-const name = 'Sergey';
-
-console.log(name.endsWith(''));
+if (0) {
+	console.log('Ложь');
+} else if (' ') {
+	console.log('Истина');
+}

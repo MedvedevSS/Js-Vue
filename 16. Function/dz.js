@@ -88,4 +88,4 @@ function getLucky(num) {
 }
 
 
-console.log(getLucky('5'));
+console.log(getLucky(11));
