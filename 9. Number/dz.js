@@ -33,14 +33,14 @@ console.log(value);
 // 4.	Проверить результат вычисления 0.6 + 0.7 - как привести к нормальному виду (1.3)?
 
 value = 0.6 + 0.7;
-value = parseFloat(value.toFixed(1));
-console.log(value);
+const sum = parseFloat(value.toFixed(1));
+console.log(sum);
 
 // 5.	Получить число из строки ‘100$’
 
-value = '100$';
-value = parseInt(value);
-console.log(value, typeof value);
+const str = '100$';
+const num = parseInt(str);
+console.log(num, typeof num);
 
 
 

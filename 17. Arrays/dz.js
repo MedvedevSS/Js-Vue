@@ -19,7 +19,7 @@ console.log(getArray(10));
 function doubleArray(arr) {
 	return arr.concat(arr);
 }
-console.log(doubleArray([1, 2, 3]));;
+console.log(doubleArray([1, 2, 3]));
 
 // Упражнение 3:
 // Создать функцию, которая принимает произвольное (любое) число массивов и удаляет из каждого массива первый элемент, а возвращает массив из оставшихся значений
@@ -36,7 +36,7 @@ function changeCollection() {
 	return newArr;
 }
 
-console.log(changeCollection([1, 2, 3], ['a', 'b', 'c']));;
+console.log(changeCollection([1, 2, 3], ['a', 'b', 'c']));
 
 // Упражнение 4:
 // Создать функцию, которая принимает массив пользователей (он внизу упражнения), поле которое хочу проверить и значение, на которое хочу проверять указанное поле. Проверять, что все аргументы переданы. Если что то не передано, то возвращать объект ошибки return new Error('Error message'). Возвращать новый массив с пользователями, соответствующим указанным параметрам.
@@ -66,7 +66,7 @@ console.log(changeCollection([1, 2, 3], ['a', 'b', 'c']));;
 // 			"age": 36,
 // 			"name": "Kari Waters",
 // 			"gender": "female"
-// 		}
+// }
 // 	]
 
 let users = [
@@ -96,20 +96,20 @@ let users = [
 		}
 	];
 
-function checkArr(arr, field, value) {
+function checkArr(arr, key, value) {
 	if (!Array.isArray(arr)) return new Error('Error message');
 
-	if (!arr[0].hasOwnProperty(field)) return new Error('Error message');
+	if (!arr[0].hasOwnProperty(key)) return new Error('Error message');
 
 	if (value === undefined) return new Error('Значение не задано');
 
 	let result = [];
 
 	for (let i = 0; i < arr.length; i++) {
-		if (arr[i][field] === value) {
+		if (arr[i][key] === value) {
 			result.push(arr[i]);
 		}
 	}
 	return result;
 }
-console.log(checkArr(users, age, 36));
+console.log(checkArr(users, 'age', 37));

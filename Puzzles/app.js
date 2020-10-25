@@ -111,11 +111,11 @@
 //   j++;
 // } while (j < arr5.length);
 
-const people = [
-	{name: 'Vladilen', budget: 4200},
-	{name: 'Elena', budget: 3500},
-	{name: 'Victoria', budget: 1700}
-	]
+// const people = [
+// 	{name: 'Vladilen', budget: 4200},
+// 	{name: 'Elena', budget: 3500},
+// 	{name: 'Victoria', budget: 1700}
+// 	]
 // const index = people.findIndex(function (person){
 // 	return person.budget > 3200
 // })
@@ -136,7 +136,7 @@ const people = [
  *   isString('test') => true
  *   isString(new String('test')) => true
  */
-​
+
 // function isString(value) {
 //   // if (typeof value === 'string') return true;
 //   // else return false;
@@ -145,7 +145,7 @@ const people = [
 // }
 //
 // console.log(isString('undefined'));
-​
+
 /**
  * Returns an area of a rectangle given by width and heigth.
  *
@@ -166,7 +166,7 @@ const people = [
 //
 // console.log(getRectangleArea(5, 10));
 // console.log(getRectangleArea(5, 5));
-​
+
 /**
  * Returns a circumference of circle given by radius.
  *
@@ -178,7 +178,7 @@ const people = [
  *   3.14 => 19.729201864543903
  *   0    => 0
  */
-​
+
 // function getCicleCircumference(radius) {
 //   // let circumference = 2 * Math.PI * radius;
 //   // return circumference;
@@ -189,7 +189,7 @@ const people = [
 // console.log(getCicleCircumference(5));
 // console.log(getCicleCircumference(3.14));
 // console.log(getCicleCircumference(0));
-​
+
 /**
  * Returns an average of two given numbers.
  *
@@ -209,7 +209,7 @@ const people = [
 // console.log(getAverage(5, 5));
 // console.log(getAverage(10, 0));
 // console.log(getAverage(-3, 3));
-​
+
 /**
  * Returns a distance beetween two points by cartesian coordinates.
  *
@@ -240,7 +240,7 @@ const people = [
 // console.log(getDistanceBetweenPoints(0, 0, 0, 1));
 // console.log(getDistanceBetweenPoints(0, 0, 1, 0));
 // console.log(getDistanceBetweenPoints(-5, 0, 10, -10));
-​
+
 /**
  * Returns a root of linear equation a*x + b = 0 given by coefficients a and b.
  *
@@ -263,7 +263,7 @@ const people = [
 // console.log(getLinearEquationRoot(5, -10));
 // console.log(getLinearEquationRoot(1, 8));
 // console.log(getLinearEquationRoot(5, 0));
-​
+
 /**
  * Returns a last digit of a integer number.
  *
@@ -286,7 +286,7 @@ const people = [
 // console.log(getLastDigit(37));
 // console.log(getLastDigit(5));
 // console.log(getLastDigit(0));
-​
+
 /**
  * Returns the array of uppercase strings from the specified array
  *
@@ -316,7 +316,7 @@ const people = [
 //   ])
 // );
 // console.log(getUpperCaseStrings(['a', 'b', 'c', 'd', 'e', 'f', 'g']));
-​
+
 /**
  * Returns the array of string lengths from the specified string array.
  *
@@ -339,7 +339,7 @@ const people = [
 //
 // console.log(getStringsLength(['', 'a', 'bc', 'def', 'ghij']));
 // console.log(getStringsLength(['angular', 'react', 'ember']));
-​
+
 /**
  * Inserts the item into specified array at specified index
  *
@@ -363,7 +363,7 @@ const people = [
 //
 // console.log(insertItem([1, 3, 4, 5], 2, 1));
 // console.log(insertItem([1, 'b', 'c'], 0, 'x'));
-​
+
 /**
  * Returns the n first items of the specified array
  *
@@ -381,7 +381,7 @@ const people = [
 //
 // console.log(getHead([ 1, 3, 4, 5 ], 2));
 // console.log(getHead(['a', 'b', 'c', 'd'], 3));
-​
+
 /**
  * Returns CSV represebtation of two-dimentional numeric array.
  * https://en.wikipedia.org/wiki/Comma-separated_values
@@ -421,7 +421,7 @@ const people = [
 //     [30, 31, 32, 33, 34],
 //   ])
 // );
-​
+
 /**
  * Transforms the numeric array into the according array of squares:
  *   f(x) = x * x
@@ -445,3 +445,8 @@ const people = [
 //
 // console.log(toArrayOfSquares([0, 1, 2, 3, 4, 5]));
 // console.log(toArrayOfSquares([10, 100, -1]));
+
+const z = 1;
+z = 20;
+z++
+console.log(z);
